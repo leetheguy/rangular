@@ -36,7 +36,7 @@ HTML:
       </div>
     </body>
 
-Done!  
+AJAX!
 
 Usage
 -----
