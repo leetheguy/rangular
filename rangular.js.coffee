@@ -37,7 +37,7 @@ rangular.directive 'raController', ["railsResource", (railsResource) ->
   (scope, element, attrs) ->
     rctrl  = attrs.raController
     scope[rctrl] = {}
-    scope[rctrl].query = if attrs.query == undefined then {} else eval('('+attrs.query+')')
+    scope[rctrl].query = if attrs.raQuery == undefined then {} else eval('('+attrs.raQuery+')')
     scope[rctrl].query.controller = rctrl
 
     scope[rctrl].callIndex = (query = scope[rctrl].query) ->
@@ -98,12 +98,12 @@ rangular.directive 'raController', ["railsResource", (railsResource) ->
       scope[rctrl].id = null
       callShowAndEdit()
 
-    scope[rctrl].setId = (id = attrs.show) ->
+    scope[rctrl].setId = (id = attrs.raShow) ->
       scope[rctrl].id = id
       callShowAndEdit()
 
     scope[rctrl].callNew()
-    if !!!attrs.show
+    if !!!attrs.raShow
       scope[rctrl].callIndex()
       scope[rctrl].clearId()
     else

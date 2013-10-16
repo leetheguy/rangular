@@ -56,17 +56,31 @@ But that really is all you need to get started.
 You can use `ng-click` to change visibility variables.  
 And you can use `ng-show` and `ng-hide` to `toggle` the visibility of elements.  
 
+Remember that you can pass variables from Rails to Javascript, but not the other way around. (not easily anyway)  
+So `<div ra-controller="<%= controller_name %>">` should work.  
+But `<%= link_to {{ note.name }}, {{ note }} %>` will not.  
+
 
 Options
+-------
+These are options used with the rangular controller declaration.
+
+* `ra-query`
+  Used to pass extra params to the server.
+  Pass in params with the JS object syntax.  
+  example: `<div ra-controller="notes" ra-query="{page:4, limit:10}">`  
+
+* `ra-show`  
+  Used to render a single element by default instead of an index.  
+  example: `<div ra-controller="notes" ra-show="42">`  
+
+
+Methods
 -------
 
 
 Variables
 ---------
-
-
-Methods
--------
 
 
 Example App
@@ -75,7 +89,7 @@ Example App
 
 Planned Features
 ----------------
-Error reporting 
+* Error reporting 
 
 
 More Info
