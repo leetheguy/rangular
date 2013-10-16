@@ -24,15 +24,17 @@ Javascript:
     
 HTML:
 
-    <div ra-controller="notes">
-      <ul>
-        <li ng-repeat="note in notes.index">
-          {{ note.name }}
-          -
-          {{ note.content }}
-        </li>
-      </ul>
-    </div>
+    <body ng-app="yourApp">
+      <div ra-controller="notes">
+        <ul>
+          <li ng-repeat="note in notes.index">
+            {{ note.name }}
+            -
+            {{ note.content }}
+          </li>
+        </ul>
+      </div>
+    </body>
 
 Done!  
 
