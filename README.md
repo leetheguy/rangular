@@ -15,6 +15,21 @@ It was my intention in creating this tool to shelter new Angular users from some
 I do however assume a solid understanding of Rails development.  
 It is my hope that this tool can be useful for anybody wanting to add an AJAX kick to an application all the way up to people wanting to create simple one page apps.  
 
+Quick Start
+-----------
+
+    <div ra-controller="notes">
+      <ul>
+        <li ng-repeat="note in notes.index">
+          {{ note.name }}
+          -
+          {{ note.content }}
+        </li>
+      </ul>
+    </div>
+
+Done!  
+
 Usage
 -----
 Let's assume we have a Rails Controller called Notes and it's all set up to respond to and return JSON.  
@@ -49,7 +64,7 @@ You can display all of your notes with the `ng-repeat` directive.
         -
         {{ note.content }}
       </li>
-    </div>
+    </ul>
 
 There are more methods and variables that allow full access to the Rails REST methods.  
 But that really is all you need to get started.  
