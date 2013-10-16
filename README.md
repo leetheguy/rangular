@@ -70,7 +70,7 @@ These are options used with the rangular controller declaration.
   Pass in params with the JS object syntax.  
   example: `<div ra-controller="notes" ra-query="{page:4, limit:10}">`  
 
-* `ra-show`  
+* `ra-show`
   Used to render a single element by default instead of an index.  
   example: `<div ra-controller="notes" ra-show="42">`  
 
