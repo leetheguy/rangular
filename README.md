@@ -18,6 +18,12 @@ It is my hope that this tool can be useful for anybody wanting to add an AJAX ki
 Quick Start
 -----------
 
+Javascript:
+
+    angular.module("yourApp", ['rangular'])
+    
+HTML:
+
     <div ra-controller="notes">
       <ul>
         <li ng-repeat="note in notes.index">
