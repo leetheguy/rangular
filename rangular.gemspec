@@ -5,7 +5,7 @@ require 'rangular/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rangular"
-  spec.version       = Rangular::VERSION
+  spec.version       = Rangular::Rails::VERSION
   spec.authors       = ["Lee Nathan"]
   spec.email         = ["leetheguy@gmail.com"]
   spec.description   = %q{put AJAX data updates in your HTML without writing JS}

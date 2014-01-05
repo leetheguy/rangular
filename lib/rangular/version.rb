@@ -1,3 +1,5 @@
 module Rangular
-  VERSION = "0.1.0.alpha"
+  module Rails
+    VERSION = "0.1.0.alpha"
+  end
 end
